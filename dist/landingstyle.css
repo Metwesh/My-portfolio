@@ -1077,15 +1077,19 @@ button {
   background-image: linear-gradient(to bottom, #ffffff, rgba(0, 0, 0, 0.068));
 }
 
-.overlay.fadeout {
-  -webkit-animation: overlayfadeout .5s forwards;
-  animation: overlayfadeout .5s forwards;
+@media (prefers-reduced-motion: no-preference) {
+  .overlay.fadeout {
+    -webkit-animation: overlayfadeout .5s forwards;
+    animation: overlayfadeout .5s forwards;
+  }
 }
 
-.overlay.fadein {
-  height: 100vh;
-  -webkit-animation: overlayfadein 1s forwards;
-  animation: overlayfadein 1s forwards;
+@media (prefers-reduced-motion: no-preference) {
+  .overlay.fadein {
+    height: 100vh;
+    -webkit-animation: overlayfadein 1s forwards;
+    animation: overlayfadein 1s forwards;
+  }
 }
 
 .overlayul {
@@ -1124,14 +1128,18 @@ button {
   border-bottom-right-radius: 20px;
 }
 
-.overlayul.hide {
-  -webkit-animation: overlayfadeout .5s forwards;
-  animation: overlayfadeout .5s forwards;
+@media (prefers-reduced-motion: no-preference) {
+  .overlayul.hide {
+    -webkit-animation: overlayfadeout .5s forwards;
+    animation: overlayfadeout .5s forwards;
+  }
 }
 
-.overlayul.show {
-  -webkit-animation: overlayfadein 1s forwards;
-  animation: overlayfadein 1s forwards;
+@media (prefers-reduced-motion: no-preference) {
+  .overlayul.show {
+    -webkit-animation: overlayfadein 1s forwards;
+    animation: overlayfadein 1s forwards;
+  }
 }
 
 .overlayLi {
@@ -1188,15 +1196,19 @@ button {
   background-image: linear-gradient(to bottom, #ffffff, rgba(0, 0, 0, 0.068));
 }
 
-.overlayform.fadeout {
-  -webkit-animation: overlayfadeout .5s forwards;
-  animation: overlayfadeout .5s forwards;
+@media (prefers-reduced-motion: no-preference) {
+  .overlayform.fadeout {
+    -webkit-animation: overlayfadeout .5s forwards;
+    animation: overlayfadeout .5s forwards;
+  }
 }
 
-.overlayform.fadein {
-  height: 100vh;
-  -webkit-animation: overlayfadein 1s forwards;
-  animation: overlayfadein 1s forwards;
+@media (prefers-reduced-motion: no-preference) {
+  .overlayform.fadein {
+    height: 100vh;
+    -webkit-animation: overlayfadein 1s forwards;
+    animation: overlayfadein 1s forwards;
+  }
 }
 
 .exit {
@@ -1361,9 +1373,11 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   }
 }
 
-input:focus ~ .highlight {
-  -webkit-animation: inputHighlighter 0.3s ease;
-  animation: inputHighlighter 0.3s ease;
+@media (prefers-reduced-motion: no-preference) {
+  input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+  }
 }
 
 .notice {
