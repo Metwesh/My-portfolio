@@ -10,7 +10,7 @@
     background-color: $black;
     width: 100vw;
     height: 80px;
-    top: 0;
+    top: -1px;
     z-index: 1000000;
 }
 
@@ -212,7 +212,7 @@ button{
     background-color: $black;
     width: 100vw;
     height: 80px;
-    top: 0px;
+    top: -1px;
     z-index: 2;
         @include breakpoint-up(medium){
         display: none;
