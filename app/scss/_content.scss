@@ -262,10 +262,15 @@
 @supports (display: grid){
     .grid{
         display: grid;
-        grid-template-rows: repeat(1fr);
+        grid-template-rows: 1fr;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 40px 40px;
         overflow: hidden;
+
+        &.expand{
+                grid-template-rows: repeat((2, 1fr));
+            }
+        
 
 
             @include breakpoint-down (small){
@@ -328,12 +333,15 @@
         padding: 20px;
         border-radius: 5px;
         box-shadow: inset 0 0 10px $darkgray;
+        height: 100%;
+
 
 
         &.p1{
             display: none;
             &.showMore{
                 display: block;
+
             }
             @include breakpoint-up (medium){
                 grid-column: 2;

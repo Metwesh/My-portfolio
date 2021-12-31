@@ -216,6 +216,7 @@ contactbutton.addEventListener('click', toggleOverlayForm);
 homeButton.addEventListener('click', toggleOverlayWithHomeButton);
 
 // Portfolio 
+const grid = document.querySelector('#grid');
 const projectImg1 = document.querySelector('#project1img');
 const project1button = document.querySelector('#project1');
 const project1buttonX = document.querySelector('#project1x');
@@ -224,6 +225,10 @@ const projectImg2 = document.querySelector('#project2img');
 const project2button = document.querySelector('#project2');
 const project2buttonX = document.querySelector('#project2x');
 const project2Text = document.querySelector('#project2text');
+
+function toggleGridLine(){
+    grid.classList.toggle('expand');
+}
 
 function toggleText1(){
     project1button.classList.toggle('show' && 'hide');
@@ -255,6 +260,7 @@ project1button.addEventListener('click', () => {
 });
 
 project2button.addEventListener('click', () => {
+    toggleGridLine();
     toggleText2();
     toggleProject_2Info();
     project2Text.scrollIntoView();
@@ -266,6 +272,7 @@ project1buttonX.addEventListener('click', () => {
 });
 
 project2buttonX.addEventListener('click', () => {
+    toggleGridLine();
     toggleText2();
     toggleProject_2Info();
 });
