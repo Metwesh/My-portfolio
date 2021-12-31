@@ -196,15 +196,10 @@ body {
   background-color: #000000;
   font-size: 16px;
   opacity: 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  body body {
-    -webkit-animation: completefadein 1s forwards;
-    animation: completefadein 1s forwards;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-  }
+  -webkit-animation: completefadein 1s forwards;
+  animation: completefadein 1s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 ::-webkit-scrollbar {
