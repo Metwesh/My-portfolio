@@ -262,7 +262,7 @@
 @supports (display: grid){
     .grid{
         display: grid;
-        grid-template-rows: minmax(min-content, max-content);
+        grid-template-rows: repeat(1fr);
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 40px 40px;
         overflow: hidden;
@@ -324,6 +324,7 @@
     .projecttext{
         font-size: $font-med;
         margin: 0px;
+        margin-bottom: auto;
         padding: 20px;
         border-radius: 5px;
         box-shadow: inset 0 0 10px $darkgray;
