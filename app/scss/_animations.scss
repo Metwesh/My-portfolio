@@ -63,10 +63,10 @@
 
 @-webkit-keyframes overlayfadeout {
     0% {
-        visibility: visible;
         -webkit-transform: translateY(0);        
         -ms-transform: translateY(0);        
-        transform: translateY(0);        
+        transform: translateY(0);   
+        visibility: visible;     
     }
     99%{
         -webkit-transform: translateY(-130%);        
@@ -84,10 +84,10 @@
 
 @keyframes overlayfadeout {
     0% {
-        visibility: visible;
         -webkit-transform: translateY(0);        
         -ms-transform: translateY(0);        
-        transform: translateY(0);        
+        transform: translateY(0);   
+        visibility: visible;     
     }
     99%{
         -webkit-transform: translateY(-130%);        

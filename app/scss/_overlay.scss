@@ -55,10 +55,8 @@
     }
 
     &.show{
-
     -webkit-animation: overlayfadein 1s forwards;
     animation: overlayfadein 1s forwards;
-
     }
 }
 
@@ -67,7 +65,9 @@
     padding: 60px 0px;
     width: 100%;
     border: 1px solid $gray;
-    
+    @include breakpoint-down(small){
+        padding: 45px 0px;
+    }
     @include breakpoint-down(xsmall){
         padding: 30px 0px;
     }
