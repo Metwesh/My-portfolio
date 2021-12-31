@@ -9,20 +9,18 @@
     -ms-transform: translateY(-130%);    
     transform: translateY(-130%);
     background-image: linear-gradient(to bottom, $white, $semitransparent);
-        @media (prefers-reduced-motion: reduce){
-            &.fadeout{
-                -webkit-animation: overlayfadeout .5s forwards;
-                animation: overlayfadeout .5s forwards;
-            }
-        }
-        @media (prefers-reduced-motion: reduce){
-            &.fadein{
-                height: 100vh;        
-                -webkit-animation: overlayfadein 1s forwards;
-                animation: overlayfadein 1s forwards;
-            
-            }
-        }
+
+    &.fadeout{
+        -webkit-animation: overlayfadeout .5s forwards;
+        animation: overlayfadeout .5s forwards;
+    }
+
+    &.fadein{
+        height: 100vh;        
+        -webkit-animation: overlayfadein 1s forwards;
+        animation: overlayfadein 1s forwards;
+    
+    }
 }
 
 .overlayul{
@@ -50,18 +48,16 @@
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
-        @media (prefers-reduced-motion: reduce){
-            &.hide{
-            -webkit-animation: overlayfadeout .5s forwards;
-            animation: overlayfadeout .5s forwards;
-            }
-        }
-        @media (prefers-reduced-motion: reduce){
-            &.show{
-            -webkit-animation: overlayfadein 1s forwards;
-            animation: overlayfadein 1s forwards;
-            }
-        }
+
+    &.hide{
+    -webkit-animation: overlayfadeout .5s forwards;
+    animation: overlayfadeout .5s forwards;
+    }
+
+    &.show{
+    -webkit-animation: overlayfadein 1s forwards;
+    animation: overlayfadein 1s forwards;
+    }
 }
 
 .overlayLi{
@@ -103,19 +99,16 @@
     transform: translateY(-130%);    
     background-image: linear-gradient(to bottom, $white, $semitransparent);
 
-        @media (prefers-reduced-motion: reduce){
-            &.fadeout{
-                -webkit-animation: overlayfadeout .5s forwards;
-                animation: overlayfadeout .5s forwards;
-            }
-        }
-        @media (prefers-reduced-motion: reduce){
-            &.fadein{
-                height: 100vh;        
-                -webkit-animation: overlayfadein 1s forwards;
-                animation: overlayfadein 1s forwards;
-            }
-        }
+    &.fadeout{
+        -webkit-animation: overlayfadeout .5s forwards;
+        animation: overlayfadeout .5s forwards;
+    }
+
+    &.fadein{
+        height: 100vh;        
+        -webkit-animation: overlayfadein 1s forwards;
+        animation: overlayfadein 1s forwards;
+    }
 }
 
 .exit{
@@ -251,12 +244,11 @@ input:focus ~ .bar:before, input:focus ~ .bar:after{
 
   
 // Active state
-@media (prefers-reduced-motion: reduce){
-    input:focus ~ .highlight {
-        -webkit-animation: inputHighlighter 0.3s ease;
-        animation: inputHighlighter 0.3s ease;
-    }
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
 }
+
 .notice{
     margin: 0;
     color: $darkergray;
