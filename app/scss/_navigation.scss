@@ -1,4 +1,7 @@
 .main-nav{
+    @supports (display: sticky){
+        display: sticky;
+    }
     position: fixed;
     display: flex;
     justify-content: center;

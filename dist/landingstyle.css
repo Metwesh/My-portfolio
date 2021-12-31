@@ -252,6 +252,12 @@ body {
   z-index: 1000000;
 }
 
+@supports (display: sticky) {
+  .main-nav {
+    display: sticky;
+  }
+}
+
 ul {
   display: -webkit-box;
   display: -ms-flexbox;
