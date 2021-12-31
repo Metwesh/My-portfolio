@@ -12,7 +12,7 @@ html{
     box-sizing: inherit;
     
 }
-@media (prefers-reduced-motion: reduce){
+
     body{
         margin: 0px 0px;
         padding: 0px 0px;
@@ -23,11 +23,14 @@ html{
         background-color: $black;
         font-size: 16px;
         opacity: 0;
-        -webkit-animation: completefadein 1s forwards;
-        animation: completefadein 1s forwards;
-        animation-delay: 1s;
+            @media (prefers-reduced-motion: reduce){
+                body{
+                    -webkit-animation: completefadein 1s forwards;
+                    animation: completefadein 1s forwards;
+                    animation-delay: 1s;
+                }
+            }
     }
-}
 
 
 
