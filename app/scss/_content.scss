@@ -1,0 +1,354 @@
+.home{
+    height: 81vh;
+    background: url(../images/nikolay-tarashchenko-DUfkXRwGQm8-unsplash.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+
+.main-text{
+    display: flex;
+    justify-content: center;
+    font-size: $font-xlg;
+    color: $white;
+    margin-top: -2vh;
+    text-transform: uppercase;
+    font-weight: 700;
+        @include breakpoint-down(small){
+            font-size: $font-lrgmed;
+            padding-top: 20vh;
+        }
+        @include breakpoint-up(small){
+            padding-top: 20vh;
+        }
+        @include breakpoint-up(medium){
+            padding-top: 10vh;
+        }
+        @include breakpoint-down(xsmall){
+            font-size: $font-med;
+            padding-top: 17vh;
+        }
+}
+
+.sub-text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: $font-lrgmed;
+    color: $white;
+    text-transform: uppercase;
+    margin: 0px;
+    height: 50vh;
+    text-shadow: -8px 8px 2px $black;
+    @include breakpoint-down(small){
+        font-size: $font-lrg;
+    }
+}
+
+// Main white area ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.message{
+    padding-top: 40px;
+    margin-top: -40px;
+}
+
+.contentbg{
+    background-image: linear-gradient(to right, $white 1%, $black, $white 99%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentdiv{
+    background-color: $white;
+    margin: 0px 80px;
+    padding: 20px 40px;
+    width: 100vw;
+    &.firstdiv{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    &.lastdiv{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+        @include breakpoint-down(small){
+            margin: 0px 20px;
+            padding: 10px 20px;
+        }
+        @include breakpoint-up(small){
+            margin: 0px 40px;
+            padding: 20px 40px;
+        }
+        @include breakpoint-down(xsmall){
+            margin: 0px 10px;
+            padding: 10px 10px;
+        }
+    
+}
+
+.textbox{
+    display: flex;
+    flex-direction: column;
+    padding-right: 3rem;
+        @include breakpoint-up(small){
+            margin-bottom: 3rem;
+        }
+        @include breakpoint-down(small){
+            padding-right: 0;
+        }
+}
+
+.pr{
+    padding-right: 3rem;
+        @include breakpoint-down(small){
+            padding-right: 0;
+        }
+}
+
+.pl{
+    padding-left: 3rem;
+        @include breakpoint-down(small){
+            padding-right: 0;
+        }
+}
+
+.main-content{
+    font-size: $font-lrgmed;
+    font-weight: 500;
+    @include breakpoint-down(small){
+        font-size: $font-lrg;
+        text-align: center;
+    }
+    &.mb{
+        margin-bottom: 48px;
+        @include breakpoint-down(small){
+            margin-bottom: 36px;
+            font-size: $font-med;
+        }    
+        
+    }
+}
+
+.sub-content{
+    font-size: $font-lrg;
+    text-indent: 4rem;
+    @include breakpoint-down(small){
+        font-size: $font-med;
+        padding: 10px;
+    }
+}
+
+.resume{
+    padding-top: 40px;
+    margin-top: -40px;
+}
+
+.buttonsigndiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0px;
+}
+
+
+
+.hide-for-desktop{
+    @include breakpoint-up(medium){
+        display: none;
+    }
+}
+
+.hide-for-mobile{
+    @include breakpoint-down(medium){
+        display: none;
+    }
+}
+
+
+
+.header-text{
+    display: flex;
+    justify-content: center;
+    font-size: $font-xlg;
+    font-weight: 700;
+    color: $black;
+    text-transform: uppercase;
+        @include breakpoint-down(small){
+            font-size: $font-lrgmed;
+        }
+
+    &.animate{
+    -webkit-animation: bounce 0.6s, bounce 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 6 alternate, fade 6s forwards;
+    animation: bounce 0.6s, bounce 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) 6 alternate, fade 6s forwards;
+        @include breakpoint-down(medium){
+            -webkit-animation: none;
+            animation: none;
+        }
+    }
+}
+
+
+
+.signature{
+    font-family: 'Corinthia', cursive;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 1rem 0;
+    @include breakpoint-down(small){
+        font-size: $font-lrg;
+    }
+}
+
+.imgcontainer{
+    display: inline;
+    @include breakpoint-down(small){
+        display: flex;
+        justify-content: center;
+    }
+    &.resumecontainer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.img{
+    border-radius: 1.11111111rem;
+    max-width: 100%;
+    width: auto;
+    max-height: 27.5rem;
+    height: auto;
+    margin-top: 2.25rem;
+    margin-bottom: 1.25rem;
+    &.right{
+        margin-left: 1.25rem;
+        float: right;
+            @include breakpoint-down(small){
+                float: none;
+                margin-left: 0;
+        }
+    }
+    &.left{
+        margin-right: 2.5rem;
+        float: left;
+            @include breakpoint-down(small){
+                float: none;
+                margin-right: 0;
+        }
+    }
+
+    &.resumebox{
+        width: auto;
+        min-width: 20%;
+        max-height: 55rem;
+        height: auto;
+        min-height: 20%;
+        margin-top: 0;
+    }
+}
+
+//Portfolio/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.portfolio{
+    padding-top: 40px;
+    margin-top: -40px;
+}
+
+@supports (display: grid){
+    .grid{
+        display: grid;
+        grid-template-rows: repeat(1fr);
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 40px 40px;
+        overflow: hidden;
+
+
+            @include breakpoint-down (small){
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+            
+    }
+    .gridcell{
+        overflow: hidden;
+        border-radius: 5px;
+        position: relative;
+    }
+    
+
+    .project{
+        max-width: 52.5rem;
+        width: 100%;
+        height: auto;
+
+        &.zoom{
+            -webkit-transition: -webkit-transform 0.5s ease-in-out;
+            transition: -webkit-transform 0.5s ease-in-out;
+            -o-transition: transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+            -webkit-transform: scale(1.09);
+            -ms-transform: scale(1.09);
+            transform: scale(1.09);
+        }
+    }
+    .learnmore{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);        
+        -ms-transform: translate(-50%, -50%);        
+        transform: translate(-50%, -50%);
+        
+        &.show{
+            display: block;
+        }
+        &.hide{
+            display: none;
+        }
+
+    }
+
+    
+    .heading{
+        display: block;
+        font-size: $font-lrgmed;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .projecttext{
+        font-size: $font-med;
+        margin: 0px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: inset 0 0 10px $darkgray;
+
+
+        &.p1{
+            display: none;
+            &.showMore{
+                display: block;
+            }
+            @include breakpoint-up (medium){
+                grid-column: 2;
+            }
+        }
+        &.p2{
+            display: none;
+            &.showMore{
+                display: block;
+            }
+            @include breakpoint-up (medium){
+                grid-column: 2;
+                grid-row: 2/3;
+            }
+        }
+
+    }
+
+}

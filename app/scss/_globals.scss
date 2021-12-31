@@ -1,0 +1,57 @@
+// Fonts /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    
+}
+
+body{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    padding-top: 80px;
+    line-height: 1.3;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 400;
+    background-color: $black;
+    font-size: 16px;
+    opacity: 0;
+    -webkit-animation: completefadein 1s forwards;
+    animation: completefadein 1s forwards;
+    animation-delay: 1s;
+}
+
+
+
+
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+        @include breakpoint-down(medium){
+            width: 0.25rem;
+        }
+}
+
+::-webkit-scrollbar-track{
+    background: $black;
+}
+
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to top, $pinkish, $cyan);
+    border-radius: 5px;
+}
+
+:focus{
+    outline: 2px solid $purplish;
+}
+
+::-moz-focus-inner{
+    border: 0;
+}
