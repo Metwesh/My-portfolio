@@ -1,11 +1,7 @@
 .home{
     height: 81vh;
-    background: url(../images/nikolay-tarashchenko-DUfkXRwGQm8-unsplash.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url(../../images/nikolay-tarashchenko-DUfkXRwGQm8-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;
-
 }
 
 
@@ -268,11 +264,14 @@
         overflow: hidden;
 
         &.expand{
-                grid-template-rows: repeat((2, 1fr));
+            @include breakpoint-up(medium){
+            grid-template-rows: repeat((2, 1fr));
             }
+        }
 
             @include breakpoint-down (small){
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                grid-template-rows: none;
+                grid-template-columns: 1fr;
             }
             
     }
@@ -306,6 +305,10 @@
         -webkit-transform: translate(-50%, -50%);        
         -ms-transform: translate(-50%, -50%);        
         transform: translate(-50%, -50%);
+
+        @include breakpoint-down (small){
+            font-size: $font-med;
+        }
         
         &.show{
             display: block;
@@ -352,7 +355,6 @@
             }
             @include breakpoint-up (medium){
                 grid-column: 2;
-                grid-row: 2/3;
             }
         }
 
