@@ -186,7 +186,7 @@ html {
           box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: reduce) {
   body {
     margin: 0px 0px;
     padding: 0px 0px;
@@ -1077,14 +1077,14 @@ button {
   background-image: linear-gradient(to bottom, #ffffff, rgba(0, 0, 0, 0.068));
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: reduce) {
   .overlay.fadeout {
     -webkit-animation: overlayfadeout .5s forwards;
     animation: overlayfadeout .5s forwards;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: reduce) {
   .overlay.fadein {
     height: 100vh;
     -webkit-animation: overlayfadein 1s forwards;
@@ -1128,14 +1128,14 @@ button {
   border-bottom-right-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: reduce) {
   .overlayul.hide {
     -webkit-animation: overlayfadeout .5s forwards;
     animation: overlayfadeout .5s forwards;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: reduce) {
   .overlayul.show {
     -webkit-animation: overlayfadein 1s forwards;
     animation: overlayfadein 1s forwards;
@@ -1196,14 +1196,14 @@ button {
   background-image: linear-gradient(to bottom, #ffffff, rgba(0, 0, 0, 0.068));
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: reduce) {
   .overlayform.fadeout {
     -webkit-animation: overlayfadeout .5s forwards;
     animation: overlayfadeout .5s forwards;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: reduce) {
   .overlayform.fadein {
     height: 100vh;
     -webkit-animation: overlayfadein 1s forwards;
@@ -1373,7 +1373,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: reduce) {
   input:focus ~ .highlight {
     -webkit-animation: inputHighlighter 0.3s ease;
     animation: inputHighlighter 0.3s ease;

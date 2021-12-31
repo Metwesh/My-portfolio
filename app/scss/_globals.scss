@@ -12,7 +12,7 @@ html{
     box-sizing: inherit;
     
 }
-@media (prefers-reduced-motion: no-preference){
+@media (prefers-reduced-motion: reduce){
     body{
         margin: 0px 0px;
         padding: 0px 0px;
