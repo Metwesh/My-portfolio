@@ -610,6 +610,12 @@ button {
   background-size: cover;
 }
 
+@media (max-width: 41.8125em) {
+  .home {
+    background-attachment: scroll;
+  }
+}
+
 .main-text {
   display: -webkit-box;
   display: -ms-flexbox;

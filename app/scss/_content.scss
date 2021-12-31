@@ -2,6 +2,9 @@
     height: 81vh;
     background: url(../images/nikolay-tarashchenko-DUfkXRwGQm8-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;
+        @include breakpoint-down (small){
+            background-attachment:scroll
+        }
 }
 
 
