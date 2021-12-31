@@ -270,8 +270,6 @@
         &.expand{
                 grid-template-rows: repeat((2, 1fr));
             }
-        
-
 
             @include breakpoint-down (small){
                 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

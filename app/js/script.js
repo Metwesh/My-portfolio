@@ -259,6 +259,7 @@ project1button.addEventListener('click', () => {
     project1Text.scrollIntoView({block: 'center'});
 });
 
+
 project2button.addEventListener('click', () => {
     toggleGridLine();
     toggleText2();
