@@ -1217,10 +1217,17 @@ button {
   }
 }
 
-@media (max-width: 22.5em) {
+@media (max-width: 30.3125em) {
   .x.white {
     height: 50%;
     width: 50%;
+  }
+}
+
+@media (max-width: 22.5em) {
+  .x.white {
+    height: 30%;
+    width: 30%;
   }
 }
 
