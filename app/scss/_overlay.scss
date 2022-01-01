@@ -118,6 +118,15 @@
     margin-left: auto;
 }
 
+.x.white{
+    margin-top: 4px;
+    fill: $white;
+        @include breakpoint-down (small){
+            height: 70%;
+            width: 70%;
+        }
+}
+
 .overlayformbox{
     visibility: inherit;
     z-index: 200;

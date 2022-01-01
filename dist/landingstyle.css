@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@900&display=swap");
 @-webkit-keyframes completefadein {
   from {
     opacity: 0;
@@ -1023,12 +1022,6 @@ button {
   .learnmore.hide {
     display: none;
   }
-  #project1x {
-    font-family: 'Noto Sans Devanagari', sans-serif;
-  }
-  #project2x {
-    font-family: 'Noto Sans Devanagari', sans-serif;
-  }
   .heading {
     display: block;
     font-size: 2.25rem;
@@ -1210,6 +1203,18 @@ button {
   padding: 10px;
   margin: -10px;
   margin-left: auto;
+}
+
+.x.white {
+  margin-top: 4px;
+  fill: #ffffff;
+}
+
+@media (max-width: 41.8125em) {
+  .x.white {
+    height: 70%;
+    width: 70%;
+  }
 }
 
 .overlayformbox {
@@ -1609,13 +1614,8 @@ input:-webkit-autofill:active {
   border-top: none;
   border-right: 1px #ffffff solid;
   border-bottom: 1px #ffffff solid;
-}
-
-@media (max-width: 41.8125em) {
-  .arrow:before {
-    -webkit-animation: arrow 1s infinite;
-    animation: arrow 1s infinite;
-  }
+  -webkit-animation: arrow 1s infinite;
+  animation: arrow 1s infinite;
 }
 
 @media (max-width: 30.3125em) {
@@ -1624,11 +1624,6 @@ input:-webkit-autofill:active {
     height: 15px;
     margin: -7.5px 0 0 -7.5px;
   }
-}
-
-.arrow:hover:before {
-  -webkit-animation: arrow 1s infinite;
-  animation: arrow 1s infinite;
 }
 
 .footerdiv {

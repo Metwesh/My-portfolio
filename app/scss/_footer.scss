@@ -150,10 +150,8 @@
     border-top: none;
     border-right: 1px $white solid;
     border-bottom: 1px $white solid;
-    @include breakpoint-down(small){
-        -webkit-animation: arrow 1s infinite;
-        animation: arrow 1s infinite;
-    }
+    -webkit-animation: arrow 1s infinite;    
+    animation: arrow 1s infinite;
     @include breakpoint-down(mdsmall){
         width: 15px;
         height: 15px;
@@ -161,10 +159,6 @@
     }
 }
 
-.arrow:hover:before{
-    -webkit-animation: arrow 1s infinite;    
-    animation: arrow 1s infinite;
-}
 
 .footerdiv{
     display: flex;
