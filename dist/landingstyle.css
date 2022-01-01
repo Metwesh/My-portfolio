@@ -1022,6 +1022,12 @@ button {
   .learnmore.hide {
     display: none;
   }
+  #project1x {
+    height: auto;
+  }
+  #project2x {
+    height: auto;
+  }
   .heading {
     display: block;
     font-size: 2.25rem;
