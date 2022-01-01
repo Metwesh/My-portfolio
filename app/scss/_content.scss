@@ -309,10 +309,12 @@
         -ms-transform: translate(-50%, -50%);        
         transform: translate(-50%, -50%);
         color: $white;
-        text-shadow: none;
-        
-        @include breakpoint-down (small){
 
+        @include breakpoint-down (small){
+            .learnmore:hover{
+                text-shadow: none;
+                box-shadow: none;
+            }
             font-size: $font-med;
         }
         

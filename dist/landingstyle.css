@@ -1010,11 +1010,15 @@ button {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: #ffffff;
-    text-shadow: none;
   }
   @media (max-width: 41.8125em) {
     .learnmore {
       font-size: 1.125rem;
+    }
+    .learnmore .learnmore:hover {
+      text-shadow: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
     }
   }
   .learnmore.show {
