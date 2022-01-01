@@ -1205,29 +1205,22 @@ button {
   margin-left: auto;
 }
 
-.x.white {
+.white {
   margin-top: 4px;
   fill: #ffffff;
 }
 
 @media (max-width: 41.8125em) {
-  .x.white {
+  .white {
     height: 70%;
     width: 70%;
   }
 }
 
 @media (max-width: 30.3125em) {
-  .x.white {
+  .white {
     height: 50%;
     width: 50%;
-  }
-}
-
-@media (max-width: 22.5em) {
-  .x.white {
-    height: 30%;
-    width: 30%;
   }
 }
 
