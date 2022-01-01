@@ -125,7 +125,7 @@
             height: 70%;
             width: 70%;
         }
-        @include breakpoint-down (small){
+        @include breakpoint-down (xsmall){
             height: 50%;
             width: 50%;
         }
