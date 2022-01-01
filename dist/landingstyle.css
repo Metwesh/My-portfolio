@@ -1217,6 +1217,13 @@ button {
   }
 }
 
+@media (max-width: 41.8125em) {
+  .x.white {
+    height: 50%;
+    width: 50%;
+  }
+}
+
 .overlayformbox {
   visibility: inherit;
   z-index: 200;
