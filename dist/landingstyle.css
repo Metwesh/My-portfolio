@@ -1223,15 +1223,15 @@ button {
 
 @media (max-width: 41.8125em) {
   .white {
-    height: 70%;
-    width: 70%;
+    height: 17px;
+    width: 17px;
   }
 }
 
 @media (max-width: 30.3125em) {
   .white {
-    height: 50%;
-    width: 50%;
+    height: 12px;
+    width: 12px;
   }
 }
 

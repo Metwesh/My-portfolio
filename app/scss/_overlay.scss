@@ -122,12 +122,12 @@
     margin-top: 4px;
     fill: $white;
         @include breakpoint-down (small){
-            height: 70%;
-            width: 70%;
+            height: 17px;
+            width: 17px;
         }
         @include breakpoint-down (mdsmall){
-            height: 50%;
-            width: 50%;
+            height: 12px;
+            width: 12px;
         }
 }
 
