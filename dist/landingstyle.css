@@ -1010,6 +1010,7 @@ button {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: #ffffff;
+    text-shadow: none;
   }
   @media (max-width: 41.8125em) {
     .learnmore {

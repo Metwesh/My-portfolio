@@ -309,8 +309,10 @@
         -ms-transform: translate(-50%, -50%);        
         transform: translate(-50%, -50%);
         color: $white;
-
+        text-shadow: none;
+        
         @include breakpoint-down (small){
+
             font-size: $font-med;
         }
         
