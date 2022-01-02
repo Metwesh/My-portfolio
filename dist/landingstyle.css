@@ -656,14 +656,12 @@ button {
   }
 }
 
-@supports (-webkit-background-clip: text) {
-  .main-text {
-    background: url("../images/ezgif.com-gif-maker (1).gif") center center no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-attachment: scroll;
-  }
+.main-text {
+  background: url("../images/ezgif.com-gif-maker (1).gif") center center no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: scroll;
 }
 
 .sub-text {
