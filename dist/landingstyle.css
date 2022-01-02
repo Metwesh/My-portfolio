@@ -656,7 +656,7 @@ button {
   }
 }
 
-@supports (-webkit-background-clip: text) {
+@supports (background: url(.gif)) {
   .main-text {
     background: url("../images/ezgif.com-gif-maker (1).gif") center center no-repeat fixed;
     -webkit-background-clip: text;

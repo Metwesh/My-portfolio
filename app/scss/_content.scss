@@ -33,9 +33,9 @@
 }
 
 
-@supports (-webkit-background-clip: text) {
+@supports (background: url(.gif)) {
     .main-text{
-    background:url('../images/ezgif.com-gif-maker\ \(1\).gif') center center no-repeat fixed;
+    background: url('../images/ezgif.com-gif-maker\ \(1\).gif') center center no-repeat fixed;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
