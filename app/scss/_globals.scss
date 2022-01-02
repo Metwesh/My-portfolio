@@ -5,7 +5,12 @@
 html{
     font-size: 100%;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+}
+
+@supports (scroll-behavior: smooth){
+    html{
+        scroll-behavior: smooth;
+    }
 }
 
 *, *::before, *::after{
@@ -22,10 +27,6 @@ body{
     font-weight: 400;
     background-color: $black;
     font-size: 16px;
-    opacity: 0;
-    -webkit-animation: completefadein 1s forwards;
-    animation: completefadein 1s forwards;
-    animation-delay: 1s;
 }
 
 
