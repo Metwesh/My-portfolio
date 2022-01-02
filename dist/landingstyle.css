@@ -656,6 +656,16 @@ button {
   }
 }
 
+@supports (-webkit-background-clip: text) {
+  .main-text {
+    background: url("../images/ezgif.com-gif-maker (1).gif") center center no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: scroll;
+  }
+}
+
 .sub-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -971,18 +981,18 @@ button {
     gap: 40px 40px;
     overflow: hidden;
   }
-  @media (min-width: 55.375em) {
-    .grid.expand {
-      -ms-grid-rows: (1fr)[2];
-          grid-template-rows: repeat(2, 1fr);
-    }
-  }
   @media (max-width: 41.8125em) {
     .grid {
       -ms-grid-rows: none;
           grid-template-rows: none;
       -ms-grid-columns: 1fr;
           grid-template-columns: 1fr;
+    }
+  }
+  @media (min-width: 55.375em) {
+    .grid.expand {
+      -ms-grid-rows: (1fr)[2];
+          grid-template-rows: repeat(2, 1fr);
     }
   }
   .gridcell {
@@ -1032,6 +1042,25 @@ button {
   }
   #project2x {
     height: auto;
+  }
+  .dorito {
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+  @media (min-width: 55.375em) {
+    .dorito.n1 {
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+    }
+  }
+  @media (min-width: 55.375em) {
+    .dorito.n2.left {
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+    }
   }
   .heading {
     display: block;

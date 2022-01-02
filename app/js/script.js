@@ -225,6 +225,8 @@ const projectImg2 = document.querySelector('#project2img');
 const project2button = document.querySelector('#project2');
 const project2buttonX = document.querySelector('#project2x');
 const project2Text = document.querySelector('#project2text');
+const dorito1 = document.querySelector('#dorito1');
+const dorito2 = document.querySelector('#dorito2');
 
 function toggleGridLine(){
     grid.classList.toggle('expand');
@@ -233,6 +235,7 @@ function toggleGridLine(){
 function toggleText1(){
     project1button.classList.toggle('show' && 'hide');
     project1buttonX.classList.toggle('hide');
+    dorito2.classList.toggle('left');
 }
 
 function toggleText2(){
@@ -267,9 +270,21 @@ project2button.addEventListener('click', () => {
     project2Text.scrollIntoView();
 });
 
+
+dorito1.addEventListener('click', () => {
+    toggleText1();
+    toggleProject_1Info();
+});
+
 project1buttonX.addEventListener('click', () => {
     toggleText1();
     toggleProject_1Info();
+});
+
+dorito2.addEventListener('click', () => {
+    toggleGridLine();
+    toggleText2();
+    toggleProject_2Info();
 });
 
 project2buttonX.addEventListener('click', () => {

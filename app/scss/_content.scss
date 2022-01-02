@@ -32,6 +32,19 @@
         }
 }
 
+
+@supports (-webkit-background-clip: text) {
+    .main-text{
+    background:url('../images/ezgif.com-gif-maker\ \(1\).gif') center center no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment:scroll
+
+    }
+
+}
+
 .sub-text{
     display: flex;
     justify-content: center;
@@ -265,17 +278,16 @@
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 40px 40px;
         overflow: hidden;
+            @include breakpoint-down (small){
+                grid-template-rows: none;
+                grid-template-columns: 1fr;
+            }
 
         &.expand{
             @include breakpoint-up(medium){
             grid-template-rows: repeat((2, 1fr));
             }
         }
-
-            @include breakpoint-down (small){
-                grid-template-rows: none;
-                grid-template-columns: 1fr;
-            }
             
     }
     .gridcell{
@@ -332,6 +344,23 @@
     }
     #project2x{
         height: auto;
+    }
+
+    .dorito{
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        &.n1{
+            @include breakpoint-up (medium){
+                transform: rotate(-90deg);
+            }
+        }
+        &.n2{
+            &.left{
+                @include breakpoint-up (medium){
+                    transform: rotate(-90deg);
+                }
+            }
+        }
     }
 
 
